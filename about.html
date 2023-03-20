@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- name of webpage. -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #6371c0;
+  color: rgb(0, 0, 0);
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: rgb(100, 90, 61);
+  color: rgb(98, 123, 204);
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #ebb70c;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: rgb(99, 107, 180);
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 1px;
+  text-align: center;
+  background: rgb(139, 3, 3);
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- head of website. -->
+<div class="header">
+  <h1>Gracious Gates</h1>
+  <p>We protect your home with technology</p>
+</div>
+
+
+<!-- navigation bar. -->
+<div class="navbar">
+  <a href="index.html">Home </a>
+  <a href="about.html">About Us</a>
+  <a href="products.html">Products</a>
+
+</div>
+
+
+
+  <div class="main">
+    <h2>ABOUT US</h2>
+    <h5>Founded in 1989</h5>
+    <img src="media\Buisnessmen.jpg" width=30% height=30%>
+    <p>
+      We spend most of our time maintaining a solid caffeine buzz and looking for new ways to inovate our products.
+      </p>
+    </p>
+      We specialise in minimalistic design. Within our designs we value simplicity,
+      symmetry and detail. 
+      </p>
+    </p>Whether we're designing gates, branding, or websites we always strive for beauty.
+      </p>Helping people set their gardens apart in a beautiful way. We employ people from all backgrounds, there is no discrimination, we strive to make an inviting work enviroment for everyone involved.
+      </p>
+    </p> Currently located in Ireland we are accepting new design opportunities both locally and internationally.
+      </p>
+    </p>Don't hesitate to get in touch. Let's make our homes more secure together!
+      </p>
+
+  </p>
+    <p>We hope to see you soon!!</p>
+    <br>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>

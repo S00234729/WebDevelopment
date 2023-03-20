@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- name of webpage. -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #b65a5a;
+  color: rgb(0, 0, 0);
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: rgb(100, 90, 61);
+  color: rgb(211, 94, 94);
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #ebb70c;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: rgb(190, 90, 90);
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 1px;
+  text-align: center;
+  background: rgb(190, 90, 90);
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- head of website. -->
+<div class="header">
+  <h1>Gracious Gates</h1>
+  <p>We protect your home with technology</p>
+</div>
+
+
+<!-- navigation bar. -->
+<div class="navbar">
+	  <a href="index.html">Home </a>
+		<a href="about.html">About Us</a>
+		<a href="products.html">Products</a>
+
+</div>
+
+
+
+  <div class="main">
+    <h2>Our Products</h2>
+    <h5>Prices may vary dependant on region</h5>
+    <p>
+      Automatic Sliding Gates €200 + Installation fees
+        </p>
+    <img src="media\automatic-gates-1.jpg" width=30% height=30%>
+    <p>
+        Airport Security Gates €350 - €475 per gate + Installation fees
+          </p>
+    <img src="media\airport.jpg" width=30% height=30%>
+    <p>
+        General Use Smart Gates €100 - €250 + Installation fees
+          </p>
+    <img src="media\regular.jpg" width=30% height=30%>
+    <p>
+     For more information on these or any other products please visit us in stores or call us at +353-855-555-169
+      </p>
+    <p>All technologies and 
+        images are owned soley by the copyright holders.</p>
+    <br>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
